@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
     <!-- #1 -->
@@ -116,14 +117,38 @@
     <!-- module 9 -->
 
     <!-- #1 -->
-    <button type="button" class="btn">Click me</button>
+    <!-- <button type="button" class="btn">Click me</button> -->
 
     <!-- #2 -->
     <!-- <button class="btn js-start">Start</button>
     <button class="btn js-stop">Stop</button> -->
     <!-- <div class="container"></div> -->
+    <div class="container">
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            id="username"
+            type="text"
+            class="form-control"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" checked />
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" disabled>Submit</button>
+      </form>
+    </div>
 
-    <script src="./js/useful-things.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+    <!-- <script src="./js/useful-things.js" type="module"></script> -->
     <!-- <script src="./js/module-1.js" type="module"></script> -->
     <!-- <script src="./js/module-2.js" type="module"></script> -->
     <!-- <script src="./js/module-3.js" type="module"></script> -->

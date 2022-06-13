@@ -78,3 +78,37 @@
 //при потере фокуса поле ввода показывает ошибку
 // - после нажатия кнопки "Отправить" надо вывести сообщение
 //об успешной авторизации
+
+const refs = {
+  submitForm: document.querySelector('form'),
+  submitBtn: document.querySelector('button[type="submit"]'),
+  usernameInput: document.querySelector('#username'),
+  passwordInput: document.querySelector('#exampleInputPassword1'),
+  formCheckbox: document.querySelector('.form-check-input'),
+};
+
+refs.submitForm.addEventListener('change', handleChange);
+
+function handleChange() {
+  if (refs.usernameInput.value && refs.passwordInput.value && refs.formCheckbox.checked) {
+    refs.submitBtn.removeAttribute('disabled');
+  } else {
+    refs.submitBtn.setAttribute('disabled', 'disabled');
+  }
+
+  if (refs.usernameInput.value.length >= 4) {
+    refs.usernameInput.classList.remove('is-invalid');
+    refs.usernameInput.classList.add('is-valid');
+  } else {
+    refs.usernameInput.classList.remove('is-valid');
+    refs.usernameInput.classList.add('is-invalid');
+  }
+
+  if (refs.passwordInput.value.length < 3 || refs.passwordInput.value.length > 30) {
+    refs.passwordInput.classList.remove('is-valid');
+    refs.passwordInput.classList.add('is-invalid');
+  } else {
+    refs.passwordInput.classList.remove('is-invalid');
+    refs.passwordInput.classList.add('is-valid');
+  }
+}

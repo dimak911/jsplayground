@@ -4,9 +4,16 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "dev": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build --public-url ./ ./src/index.html --dist-dir build"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
     "parcel": "latest"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.2.0-beta1"
   }
 }
