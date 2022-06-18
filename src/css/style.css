@@ -192,7 +192,7 @@ p {
     text-align: center;
 } */
 
-.navigation__link--current {
+/* .navigation__link--current {
     color: aqua;
     background: white;
 }
@@ -268,11 +268,11 @@ li {
 
 .error {
     border: 3px solid red;
-}
+} */
 
 /* ============ship================== */
 
-#sea {
+/* #sea {
     width: 300px;
     height: 200px;
     border: 10px solid black;
@@ -375,4 +375,59 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
+} */
+
+/* module 10 */
+/* #3 */
+/* body {
+    margin: 16px;
+    line-height: 1.5;
+    color: #212121;
+    font-family: sans-serif;
 }
+
+p {
+    margin: 0;
+}
+
+.posts {
+    margin: 0;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.posts li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.post-title:first-letter {
+    text-transform: uppercase;
+}
+
+.post-body {
+    margin: 0;
+}
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    background-color: tomato;
+    color: #fff;
+    transform: translatey(-100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.alert.is-visible {
+    transform: translatey(0);
+} */
